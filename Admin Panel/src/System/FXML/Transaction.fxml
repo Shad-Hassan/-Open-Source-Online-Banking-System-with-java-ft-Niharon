@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="465.0" prefWidth="1008.0" style="-fx-background-color: #ebedf0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.Transaction">
+   <top>
+      <BorderPane prefHeight="403.0" prefWidth="1008.0" BorderPane.alignment="CENTER">
+         <left>
+            <AnchorPane prefHeight="180.0" prefWidth="363.0" style="-fx-background-color: White;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" style="-fx-text-fill: blue;" text="Transfer Money">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="19.0" layoutY="151.0" text="AC No :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="transtoAC" layoutX="81.0" layoutY="147.0" prefHeight="26.0" prefWidth="206.0" />
+                  <Button fx:id="transbutton" layoutX="286.0" layoutY="339.0" mnemonicParsing="false" onAction="#transfer" text="Transfer" />
+                  <Label layoutX="14.0" layoutY="204.0" text="Amount :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="transAmount" layoutX="81.0" layoutY="198.0" prefHeight="26.0" prefWidth="210.0" />
+                  <Text layoutX="297.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: blue;" text="\$">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <Pane prefHeight="383.0" prefWidth="271.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" style="-fx-text-fill: blue;" text="Deposit/Withdraw">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="150.0" text="Ac No :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="12.0" layoutY="198.0" text="Amount :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="dwac" layoutX="75.0" layoutY="146.0" prefHeight="25.0" prefWidth="169.0" />
+                  <TextField fx:id="dwamount" layoutX="75.0" layoutY="194.0" prefHeight="25.0" prefWidth="168.0" />
+                  <Button fx:id="depbtn" layoutX="16.0" layoutY="344.0" mnemonicParsing="false" onAction="#depositac" prefHeight="25.0" prefWidth="83.0" text="Deposit" />
+                  <Button fx:id="withbtn" layoutX="179.0" layoutY="344.0" mnemonicParsing="false" onAction="#withdrawac" prefHeight="25.0" prefWidth="78.0" text="Withdraw" />
+               </children>
+            </Pane>
+         </right>
+         <center>
+            <Pane minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" style="-fx-text-fill: blue;" text="Add Money">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="14.0" layoutY="78.0" text="Card Type :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <ChoiceBox fx:id="cardtypechoicebox" layoutX="113.0" layoutY="78.0" prefHeight="25.0" prefWidth="170.0" />
+                  <Label layoutX="14.0" layoutY="120.0" text="Card No :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="14.0" layoutY="157.0" text="Expired :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="22.0" layoutY="202.0" text="CVC :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="16.0" layoutY="241.0" text="Billing Adress :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="aCardNo" layoutX="112.0" layoutY="119.0" prefHeight="25.0" prefWidth="172.0" />
+                  <TextField fx:id="aExdate" alignment="CENTER" layoutX="112.0" layoutY="156.0" prefHeight="26.0" prefWidth="75.0" promptText="Month" />
+                  <TextField fx:id="acvc" layoutX="112.0" layoutY="198.0" prefHeight="25.0" prefWidth="171.0" />
+                  <TextField fx:id="aBillingAdress" layoutX="116.0" layoutY="241.0" prefHeight="25.0" prefWidth="167.0" />
+                  <Button fx:id="addMoney" layoutX="195.0" layoutY="339.0" mnemonicParsing="false" onAction="#add" prefHeight="30.0" prefWidth="84.0" text="Add" />
+                  <TextField fx:id="aExyear" layoutX="208.0" layoutY="156.0" prefHeight="26.0" prefWidth="75.0" promptText="Year" />
+                  <TextField fx:id="aamount" layoutX="116.0" layoutY="278.0" prefHeight="25.0" prefWidth="166.0" />
+                  <Label layoutX="23.0" layoutY="282.0" text="Amount :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </top>
+   <center>
+      <BorderPane prefHeight="162.0" prefWidth="1008.0" BorderPane.alignment="CENTER">
+         <center>
+            <Label fx:id="DisplayMessage" alignment="CENTER" prefHeight="20.0" prefWidth="806.0" style="-fx-text-fill: red;" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </center></BorderPane>
+   </center>
+</BorderPane>

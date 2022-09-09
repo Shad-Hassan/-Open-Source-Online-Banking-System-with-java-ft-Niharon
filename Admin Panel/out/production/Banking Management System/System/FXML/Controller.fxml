@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1063.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.Controller">
+   <left>
+      <BorderPane fx:id="sidebar" prefHeight="600.0" prefWidth="56.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <top>
+            <BorderPane prefHeight="53.0" prefWidth="324.0" BorderPane.alignment="CENTER">
+               <left>
+                  <ImageView fx:id="menu" fitHeight="33.0" fitWidth="44.0" onMouseClicked="#menu_ac" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@icons/outline_menu_black_24dp.png" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" left="12.0" right="10.0" top="10.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </left>
+            </BorderPane>
+         </top>
+         <center>
+            <Pane prefHeight="547.0" prefWidth="198.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="cards" layoutX="66.0" layoutY="238.0" onMouseClicked="#cards_ac" prefHeight="18.0" prefWidth="42.0" text="New AC" visible="false" />
+                  <Label fx:id="details" layoutX="66.0" layoutY="286.0" onMouseClicked="#detail_ac" prefHeight="18.0" prefWidth="46.0" text="Details" visible="false" />
+                  <Label fx:id="settings" layoutX="66.0" layoutY="330.0" onMouseClicked="#sett_ac" prefHeight="18.0" prefWidth="54.0" text="Settings" visible="false" />
+                  <Label fx:id="exit" layoutX="66.0" layoutY="421.0" onMouseClicked="#exit_ac" prefHeight="18.0" prefWidth="29.0" text="Exit" visible="false" />
+                  <Label fx:id="transaction" layoutX="66.0" layoutY="187.0" onMouseClicked="#trans_ac" prefHeight="18.0" prefWidth="74.0" text="Transaction" visible="false" />
+                  <Label fx:id="dashboard" layoutX="64.0" layoutY="136.0" onMouseClicked="#dash_ac" prefHeight="18.0" prefWidth="69.0" text="Dashboard" visible="false" />
+                  <Label fx:id="aboutus" layoutX="62.0" layoutY="375.0" onMouseClicked="#abou_ac" prefHeight="18.0" prefWidth="59.0" text="About Us" visible="false" />
+                  <ImageView fx:id="dashicon" fitHeight="36.0" fitWidth="26.0" layoutX="14.0" layoutY="132.0" onMouseClicked="#dashmc" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/baseline_dashboard_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="transicon" fitHeight="36.0" fitWidth="26.0" layoutX="14.0" layoutY="183.0" onMouseClicked="#transmc" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/baseline_account_balance_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="detailicon" fitHeight="36.0" fitWidth="26.0" layoutX="14.0" layoutY="282.0" onMouseClicked="#detailmc" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/baseline_info_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="cardicon" fitHeight="36.0" fitWidth="26.0" layoutX="14.0" layoutY="232.0" onMouseClicked="#cardmc" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/baseline_card_membership_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="setticon" fitHeight="36.0" fitWidth="26.0" layoutX="14.0" layoutY="326.0" onMouseClicked="#settmc" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/baseline_settings_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="abouticon" fitHeight="36.0" fitWidth="26.0" layoutX="14.0" layoutY="371.0" onMouseClicked="#aboutmc" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/baseline_contacts_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="exiticon" fitHeight="36.0" fitWidth="26.0" layoutX="14.0" layoutY="417.0" onMouseClicked="#exitmc" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/baseline_exit_to_app_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </left>
+   <center>
+      <BorderPane fx:id="view" prefHeight="601.0" prefWidth="748.0" style="-fx-background-color: #ebedf0;" BorderPane.alignment="CENTER">
+         <top>
+            <BorderPane prefHeight="83.0" prefWidth="564.0" BorderPane.alignment="CENTER">
+               <top>
+                  <BorderPane prefHeight="43.0" prefWidth="564.0" BorderPane.alignment="CENTER">
+                     <left>
+                        <HBox prefHeight="45.0" prefWidth="331.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <TextField fx:id="srchbox" prefHeight="26.0" prefWidth="281.0" promptText="Search" style="-fx-background-color: #ffff;">
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <ImageView fx:id="searchbtn" fitHeight="28.0" fitWidth="34.0" onMouseClicked="#searchaction" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" top="10.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@icons/search.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </left>
+                     <right>
+                        <HBox prefHeight="48.0" prefWidth="83.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="47.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/outline_email_black_24dp.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="40.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/outline_notifications_black_24dp.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Pane prefHeight="38.0" prefWidth="40.0" style="-fx-background-radius: 25;">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="10.0" right="10.0" top="7.0" />
+                                 </HBox.margin>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </right>
+                  </BorderPane>
+               </top>
+               <bottom>
+                  <BorderPane prefHeight="42.0" prefWidth="564.0" style="-fx-background-color: #ebedf0;" BorderPane.alignment="CENTER">
+                     <left>
+                        <Label fx:id="title" text="Dashboard" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Calibri Bold" size="25.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets left="10.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="dateview" prefHeight="21.0" prefWidth="118.0" style="-fx-text-fill: blue;" text="Thu 02.09.2021" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                     </right>
+                  </BorderPane>
+               </bottom>
+            </BorderPane>
+         </top>
+         <bottom>
+            <BorderPane prefHeight="45.0" prefWidth="891.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <BorderPane fx:id="dashboardview" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <BorderPane prefHeight="346.0" prefWidth="742.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <BorderPane prefHeight="205.0" prefWidth="742.0" BorderPane.alignment="CENTER">
+                           <left>
+                              <AnchorPane fx:id="balance_pane" prefHeight="185.0" prefWidth="345.0" style="-fx-background-color: #549af0; -fx-background-radius: 15;" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </BorderPane.margin>
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="14.0" text="Total Balance">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="24.0" layoutY="130.0" text="\$">
+                                       <font>
+                                          <Font name="System Bold" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="balance" layoutX="40.0" layoutY="128.0" prefHeight="43.0" prefWidth="148.0" text="12695.545">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lAcno" layoutX="18.0" layoutY="46.0" prefHeight="18.0" prefWidth="257.0" text="AC No : Admin">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </left>
+                           <right>
+                              <Pane prefHeight="180.0" prefWidth="285.0" style="-fx-background-image: url(&quot;file:/D:/Summer2021(Running)/Advance%20OOP/Project%20Files/gv.jpg&quot;);" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label fx:id="lcnum" layoutX="20.0" layoutY="107.0" prefHeight="30.0" prefWidth="208.0" text="0xxxxxxxxxxxxxxxx">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lcname" alignment="CENTER_RIGHT" layoutX="45.0" layoutY="154.0" prefHeight="25.0" prefWidth="231.0" text="Admin">
+                                       <font>
+                                          <Font name="System Bold Italic" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lctype" layoutX="8.0" layoutY="5.0" text="Gold Credit Card">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </BorderPane.margin>
+                              </Pane>
+                           </right>
+                           <center>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 15;" BorderPane.alignment="CENTER">
+                                 <left>
+                                    <AnchorPane prefHeight="205.0" prefWidth="141.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="14.0" text="Total Amount :" />
+                                          <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="27.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/baseline_file_upload_red_24dp.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="27.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/baseline_download_green_24dp.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="66.0" layoutY="66.0" text="Withdraw" />
+                                          <Label layoutX="72.0" layoutY="122.0" text="Deposit" />
+                                       </children>
+                                    </AnchorPane>
+                                 </left>
+                                 <right>
+                                    <AnchorPane prefHeight="205.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Label fx:id="lwithdraw" alignment="CENTER_RIGHT" layoutX="8.0" layoutY="73.0" prefHeight="20.0" prefWidth="115.0" style="-fx-text-fill: #549af0;" text="1120.25$">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="ldeposit" alignment="CENTER_RIGHT" layoutX="9.0" layoutY="120.0" prefHeight="20.0" prefWidth="113.0" style="-fx-text-fill: #549af0;" text="2000.50$">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </right>
+                                 <BorderPane.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </BorderPane.margin>
+                              </BorderPane>
+                           </center>
+                        </BorderPane>
+                     </top>
+                     <bottom>
+                        <BorderPane prefHeight="249.0" prefWidth="1007.0" BorderPane.alignment="CENTER">
+                           <center>
+                              <AnchorPane prefHeight="269.0" prefWidth="987.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </BorderPane.margin>
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="14.0" text="Bank Information :">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="12.0" layoutY="63.0" text="Number of Accounts :">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font></Label>
+                                    <Label layoutX="628.0" layoutY="85.0">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Label>
+                                    <Label layoutX="628.0" layoutY="115.0">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Label>
+                                    <Label layoutX="12.0" layoutY="102.0" text="Total Current Balance :">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font></Label>
+                                    <Label layoutX="13.0" layoutY="143.0" text="Total Available Balance :">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font></Label>
+                                    <Label layoutX="631.0" layoutY="217.0">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Label>
+                                    <Label fx:id="lab10" layoutX="214.0" layoutY="64.0" prefHeight="18.0" prefWidth="156.0" text="None" />
+                                    <Label fx:id="lab11" layoutX="776.0" layoutY="85.0" prefHeight="18.0" prefWidth="156.0" />
+                                    <Label fx:id="lab12" layoutX="776.0" layoutY="115.0" prefHeight="18.0" prefWidth="156.0" />
+                                    <Label fx:id="lab13" layoutX="214.0" layoutY="106.0" prefHeight="18.0" prefWidth="156.0" text="None" />
+                                    <Label fx:id="lab14" layoutX="214.0" layoutY="144.0" prefHeight="18.0" prefWidth="156.0" text="None" />
+                                    <Label fx:id="lab15" layoutX="776.0" layoutY="217.0" prefHeight="18.0" prefWidth="156.0" />
+                                    <Label layoutX="13.0" layoutY="175.0" prefHeight="20.0" prefWidth="94.0" text="AC Status :">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font></Label>
+                                    <Label fx:id="lacstatus" layoutX="214.0" layoutY="176.0" prefHeight="18.0" prefWidth="104.0" text="Active" />
+                                 </children>
+                              </AnchorPane>
+                           </center></BorderPane>
+                     </bottom>
+                  </BorderPane>
+               </center>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

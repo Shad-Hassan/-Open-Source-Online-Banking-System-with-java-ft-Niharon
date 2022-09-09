@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Admin Panel/Admin Panel.iml" filepath="$PROJECT_DIR$/Admin Panel/Admin Panel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Client Panel/Client Panel.iml" filepath="$PROJECT_DIR$/Client Panel/Client Panel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Online-Banking-System.iml" filepath="$PROJECT_DIR$/Online-Banking-System.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="465.0" prefWidth="1008.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.Details">
+   <left>
+      <AnchorPane prefHeight="465.0" prefWidth="215.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="57.0" layoutY="14.0" prefHeight="17.0" prefWidth="87.0" style="-fx-text-fill: Green;" text="Account List">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="13.0" layoutY="39.0" prefHeight="421.0" prefWidth="185.0">
+               <content>
+                  <VBox fx:id="aclistbox" maxWidth="183.0" minWidth="183.0" prefHeight="399.0" prefWidth="183.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="15.0" layoutY="126.0" text="Number :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab10" layoutX="176.0" layoutY="127.0" prefHeight="18.0" prefWidth="152.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="158.0" text="Title :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab11" layoutX="176.0" layoutY="159.0" prefHeight="18.0" prefWidth="152.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="190.0" text="Opening Date :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab12" layoutX="177.0" layoutY="191.0" prefHeight="18.0" prefWidth="151.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="223.0" prefHeight="20.0" prefWidth="121.0" text="Current Balance :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab13" layoutX="177.0" layoutY="224.0" prefHeight="18.0" prefWidth="145.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="256.0" prefHeight="20.0" prefWidth="128.0" text="Available Balance :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab14" layoutX="177.0" layoutY="256.0" prefHeight="18.0" prefWidth="136.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="289.0" text="Last Transaction Date :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab15" layoutX="178.0" layoutY="291.0" prefHeight="18.0" prefWidth="156.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="578.0" layoutY="315.0" prefHeight="20.0" prefWidth="92.0" text="AC Status :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lacstatus" layoutX="674.0" layoutY="315.0" prefHeight="18.0" prefWidth="104.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lwithdraw" layoutX="178.0" layoutY="320.0" prefHeight="20.0" prefWidth="120.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ldeposit" layoutX="179.0" layoutY="350.0" prefHeight="20.0" prefWidth="118.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="319.0" text="Withdraw :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="349.0" text="Deposit :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="laco" layoutX="15.0" layoutY="39.0" style="-fx-text-fill: blue;" text="AC : XXXXXXXXXXXXXX">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="323.0" layoutY="126.0" text="Name :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab101" layoutX="409.0" layoutY="127.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="323.0" layoutY="158.0" text="No :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="322.0" layoutY="189.0" prefHeight="20.0" prefWidth="46.0" text="CVC :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab111" layoutX="409.0" layoutY="159.0" prefHeight="17.0" prefWidth="40.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab121" layoutX="411.0" layoutY="190.0" prefHeight="17.0" prefWidth="85.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="324.0" layoutY="227.0" text="Issue :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab141" layoutX="413.0" layoutY="228.0" prefHeight="17.0" prefWidth="49.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="323.0" layoutY="260.0" text="Expire :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab151" layoutX="413.0" layoutY="261.0" prefHeight="17.0" prefWidth="66.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="324.0" layoutY="291.0" text="Type :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab16" layoutX="413.0" layoutY="292.0" prefHeight="17.0" prefWidth="84.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="325.0" layoutY="320.0" prefHeight="20.0" prefWidth="59.0" text="Doller :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab17" layoutX="413.0" layoutY="321.0" prefHeight="17.0" prefWidth="64.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="324.0" layoutY="352.0" text="Credit :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab18" layoutX="413.0" layoutY="353.0" prefHeight="17.0" prefWidth="67.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="325.0" layoutY="386.0" text="Max Limit :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab19" layoutX="412.0" layoutY="386.0" prefHeight="17.0" prefWidth="101.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="579.0" layoutY="343.0" text="Card Status :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab20" layoutX="675.0" layoutY="343.0" prefHeight="20.0" prefWidth="95.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="email2" layoutX="15.0" layoutY="59.0" prefHeight="30.0" prefWidth="243.0" style="-fx-text-fill: blue;" text="rakibul.rk2@gmail.com">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="573.0" layoutY="125.0" text="First Name :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="fn" layoutX="673.0" layoutY="125.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="574.0" layoutY="156.0" text="Last Name :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ln" layoutX="673.0" layoutY="156.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="571.0" layoutY="186.0" text="Date of Birth :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="dob" layoutX="673.0" layoutY="186.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="576.0" layoutY="219.0" text="Phone Num :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="phn" layoutX="673.0" layoutY="219.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="576.0" layoutY="248.0" text="ID Card num:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="id" layoutX="673.0" layoutY="248.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="576.0" layoutY="282.0" text="Passport No :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="pp" layoutX="674.0" layoutY="283.0" text="None">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

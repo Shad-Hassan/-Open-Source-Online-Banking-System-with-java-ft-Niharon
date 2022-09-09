@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="445.0" prefWidth="1007.0" style="-fx-background-color: #ebedf0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.Cards">
+   <top>
+      <BorderPane prefHeight="207.0" prefWidth="1007.0" BorderPane.alignment="CENTER">
+         <left>
+            <Pane prefHeight="187.0" prefWidth="288.0" style="-fx-background-image: url(&quot;file:/D:/Summer2021(Running)/Advance%20OOP/Project%20Files/gv.jpg&quot;);" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label fx:id="lname" alignment="TOP_RIGHT" layoutX="79.0" layoutY="156.0" prefHeight="25.0" prefWidth="197.0" text="None">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lnum" layoutX="27.0" layoutY="101.0" prefHeight="33.0" prefWidth="235.0" text="None">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ltype" layoutX="13.0" layoutY="14.0" prefHeight="17.0" prefWidth="125.0" text="None">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </left>
+         <right>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </Pane>
+         </right>
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </top>
+   <bottom>
+      <BorderPane prefHeight="230.0" prefWidth="1007.0" BorderPane.alignment="CENTER">
+         <left>
+            <AnchorPane prefHeight="210.0" prefWidth="978.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Details">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="42.0" text="Name :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="14.0" layoutY="66.0" text="No :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="278.0" layoutY="42.0" text="Type :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="14.0" layoutY="112.0" text="Balance :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="14.0" layoutY="138.0" text="Issue :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="lab10" layoutX="73.0" layoutY="42.0" text="None" />
+                  <Label fx:id="lab11" layoutX="73.0" layoutY="66.0" text="None" />
+                  <Label fx:id="lab16" layoutX="360.0" layoutY="42.0" prefHeight="17.0" prefWidth="87.0" text="None" />
+                  <Label fx:id="lab13" layoutX="73.0" layoutY="112.0" text="None" />
+                  <Label fx:id="lab14" layoutX="73.0" layoutY="138.0" prefHeight="17.0" prefWidth="54.0" text="None" />
+                  <Label layoutX="16.0" layoutY="162.0" text="Expire :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="lab15" layoutX="73.0" layoutY="162.0" prefHeight="17.0" prefWidth="69.0" text="None" />
+                  <Label layoutX="278.0" layoutY="62.0" text="Doller :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="278.0" layoutY="86.0" text="Credit :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="278.0" layoutY="108.0" text="Max Limit :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="278.0" layoutY="132.0" text="Card Status :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="16.0" layoutY="88.0" text="CVC :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="lab12" layoutX="73.0" layoutY="88.0" prefHeight="17.0" prefWidth="89.0" text="None" />
+                  <Label fx:id="lab17" layoutX="360.0" layoutY="62.0" prefHeight="17.0" prefWidth="65.0" text="None" />
+                  <Label fx:id="lab18" layoutX="360.0" layoutY="86.0" prefHeight="17.0" prefWidth="71.0" text="None" />
+                  <Label fx:id="lab19" layoutX="360.0" layoutY="108.0" prefHeight="17.0" prefWidth="79.0" text="None" />
+                  <Label fx:id="lab20" layoutX="360.0" layoutY="132.0" prefHeight="17.0" prefWidth="85.0" text="None" />
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </bottom>
+   <center>
+      <BorderPane prefHeight="150.0" prefWidth="1007.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

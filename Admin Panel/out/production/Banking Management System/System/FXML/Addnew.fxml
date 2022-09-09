@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="445.0" prefWidth="1007.0" style="-fx-background-color: #ebedf0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.Addnew">
+   <left>
+      <AnchorPane prefHeight="445.0" prefWidth="602.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" style="-fx-text-fill: blue;" text="Open New Account">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="147.0" text="NewAccount Num :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="29.0" layoutY="184.0" text="Title :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="29.0" layoutY="302.0" text="Email :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="25.0" layoutY="224.0" text="Balance :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="19.0" layoutY="260.0" text="Opening Date :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="25.0" layoutY="346.0" text="Password :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="21.0" layoutY="72.0" text="First Name :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="21.0" layoutY="109.0" text="Last name">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="21.0" layoutY="395.0" text="Confirm Pass :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="firstnamef" layoutX="152.0" layoutY="68.0" />
+            <TextField fx:id="lastnamef" layoutX="152.0" layoutY="105.0" />
+            <TextField fx:id="newacnum" layoutX="152.0" layoutY="143.0" />
+            <TextField fx:id="titlef" layoutX="152.0" layoutY="180.0" />
+            <TextField fx:id="balancef" layoutX="152.0" layoutY="220.0" />
+            <TextField fx:id="openingdatef" layoutX="152.0" layoutY="256.0" />
+            <TextField fx:id="emailf" layoutX="152.0" layoutY="298.0" />
+            <TextField fx:id="passf" layoutX="152.0" layoutY="342.0" />
+            <TextField fx:id="confpassf" layoutX="152.0" layoutY="383.0" />
+            <Label layoutX="334.0" layoutY="72.0" text="Date of Birth :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="334.0" layoutY="109.0" text="ID Num :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="334.0" layoutY="147.0" text="Passport :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="dobf" layoutX="435.0" layoutY="68.0" />
+            <TextField fx:id="idnumf" layoutX="435.0" layoutY="105.0" />
+            <TextField fx:id="passnumf" layoutX="435.0" layoutY="143.0" />
+            <Button fx:id="confirm" layoutX="461.0" layoutY="406.0" mnemonicParsing="false" onAction="#confirmopen" prefHeight="25.0" prefWidth="122.0" text="Confirm">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Label layoutX="334.0" layoutY="184.0" text="Phone No :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="phnf" layoutX="435.0" layoutY="181.0" />
+            <Label fx:id="msg1" layoutX="12.0" layoutY="421.0" prefHeight="17.0" prefWidth="281.0" style="-fx-text-fill: red;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="445.0" prefWidth="391.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </BorderPane.margin>
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" style="-fx-text-fill: blue;" text="Add Card">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="63.0" text="AC No :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="98.0" text="Card Name :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="139.0" text="Card num :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="178.0" text="CVC :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="21.0" layoutY="259.0" text="Card Type :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="18.0" layoutY="219.0" text="Issue :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="30.0" layoutY="344.0" text="PIN :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="20.0" layoutY="385.0" text="Confirm PIN :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="211.0" layoutY="219.0" text="Expire :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="211.0" layoutY="178.0" text="Credit :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="22.0" layoutY="301.0" text="Max Limit :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="cfacno" layoutX="104.0" layoutY="56.0" />
+            <TextField fx:id="cfcardnamef" layoutX="104.0" layoutY="94.0" />
+            <TextField fx:id="cfcardnumf" layoutX="104.0" layoutY="135.0" />
+            <TextField fx:id="cfcvc" layoutX="104.0" layoutY="174.0" prefHeight="25.0" prefWidth="73.0" />
+            <TextField fx:id="cfcreditf" layoutX="262.0" layoutY="174.0" prefHeight="25.0" prefWidth="73.0" />
+            <TextField fx:id="cfissue" layoutX="104.0" layoutY="215.0" prefHeight="25.0" prefWidth="73.0" />
+            <TextField fx:id="cfexpire" layoutX="262.0" layoutY="215.0" prefHeight="25.0" prefWidth="73.0" />
+            <TextField fx:id="cfcardtype" layoutX="104.0" layoutY="255.0" />
+            <TextField fx:id="cfmaxlim" layoutX="104.0" layoutY="297.0" />
+            <TextField fx:id="cfpass" layoutX="104.0" layoutY="340.0" />
+            <TextField fx:id="cfconpass" layoutX="104.0" layoutY="381.0" />
+            <Button fx:id="cardaddctn" layoutX="290.0" layoutY="406.0" mnemonicParsing="false" onAction="#addcard" prefHeight="25.0" prefWidth="71.0" text="ADD">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Label fx:id="msg2" layoutX="18.0" layoutY="421.0" prefHeight="17.0" prefWidth="221.0" style="-fx-text-fill: red;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

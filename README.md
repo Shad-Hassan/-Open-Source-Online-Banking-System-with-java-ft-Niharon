@@ -15,4 +15,5 @@ Copy and paste the bank folder and paste in SQL database(C:\ProgramData\MySQL\My
 8. Server authentication  Transaction
 
 # Video Presentation
+Click on the image below to view a video presentation of that project.
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/bhB4rEYkYIA/0.jpg)](https://youtu.be/bhB4rEYkYIA)

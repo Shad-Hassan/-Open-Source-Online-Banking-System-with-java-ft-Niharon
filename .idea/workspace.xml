@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37d2cdc4-b0a6-49e0-b559-04c5a02e8185" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/google_protobuf_java.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin Panel/Admin Panel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Admin Panel/Admin Panel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin Panel/src/Server/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/Admin Panel/src/Server/DatabaseConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin Panel/src/System/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/Admin Panel/src/System/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client Panel/Client Panel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Client Panel/Client Panel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Online Bank Management System.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Online-Banking-System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Online-Banking-System.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client Panel/src/System/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client Panel/src/System/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/DatabaseConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +38,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Admin Panel (JavaFX).executor": "Run",
     "Application.Server Application.executor": "Run",
     "Application.Server.executor": "Run",
     "Downloaded.Files.Path.Enabled": "true",
@@ -67,7 +64,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Server Application">
+  <component name="RunManager" selected="Application.Admin Panel (JavaFX)">
     <configuration name="Admin Panel (JavaFX)" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="System.Main" />
       <module name="Admin Panel" />
@@ -117,7 +114,8 @@
       <workItem from="1761165245604" duration="225000" />
       <workItem from="1761165562224" duration="2589000" />
       <workItem from="1761168693904" duration="252000" />
-      <workItem from="1761169015769" duration="3316000" />
+      <workItem from="1761169015769" duration="4337000" />
+      <workItem from="1761173538070" duration="1321000" />
     </task>
     <servers />
   </component>

@@ -6,8 +6,8 @@ import java.sql.Statement;
 
 public class DatabaseConnection {
     static String url="jdbc:mysql://localhost:3306/bank";
-    static String username="root";
-    static String pass="admin";
+    static String username="bankerSajid";
+    static String pass="MS18QV(.3Cf@Ltzd";
     static Statement statement;
      static Statement Connection(){
         try {
